@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100vh;
+            width: 100vw;
+            text-align: center;
+            margin: 0 auto;
+        }
+        h2{
+            align-self: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: ; */
+            height: 100%;
+            /* width: 100%; */
+        }
+         .header {
+            /* padding-top: 25px; */
+            padding-top: 3px;
+            background-color: tomato;
+
+        }
+        .menu{
+            position: absolute;
+            top: 18px;
+            right: 10px;
+        }
+        .menu ul{
+            list-style: none;
+            }
+        .menu li{
+            float: left;
+            margin-right: 20px;
+        }
+        .content {
+            display: flex;
+            flex: 1;
+        }
+        .aside {
+            flex: 0.3;
+            background-color: #bfbab078;
+        }
+
+        .aside, .footer{
+            display: flex;
+            justify-content: center;
+        }
+        .row-1{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .row-1 .main{
+            display: flex;
+            flex: 1;
+            overflow: auto;
+            background-color: #ffffff;
+        }
+        .row-1 .footer{
+            display: flex;
+            overflow: auto;
+            flex: 0.2;      
+            background-color: palegoldenrod;
+        }
+        p{
+            padding: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+        <h1>header</h1>
+        </header>
+        <div class="menu">
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="aside">
+                <h2>aside</h2>
+            </div>
+            <div class="row-1">
+                <div class="main">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, eaque quod iusto aspernatur dolorum nobis molestias fuga? Maiores ipsa accusantium ut nihil molestiae dolorum omnis quasi, aspernatur, quaerat cupiditate praesentium labore similique commodi impedit odit esse recusandae optio earum! Alias iste quis, iusto ratione corrupti delectus, assumenda accusantium veritatis voluptatum dolorum voluptate quibusdam libero consequuntur similique ipsam impedit officia. Omnis magni, qui error at unde cum inventore officiis nesciunt quae! Porro, officia ex? Ipsam sapiente fugit voluptatibus libero, doloribus quos ipsa ducimus possimus voluptatum ipsum! Voluptatum, quos consequuntur laborum dolorem dolores tempora culpa nihil, repellendus fuga, molestiae saepe aliquid cupiditate!</p>
+                </div>
+                <div class="footer">
+                        <h2>footer</h2>
+                </div>
+            </div>
+        </div>
+        <!-- <footer class="footer">
+            footer
+        </footer> -->
+    </div>
+      
+</body>
+</html>
